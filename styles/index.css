@@ -1,0 +1,62 @@
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+
+body {
+    background-image: url('../images/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top-container {
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-container {
+    min-height: 100vh;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading {
+    font-family: 'Montez', cursive; 
+    margin: 0;
+    padding: 0;
+    color: blue;
+}
+
+.sub-heading {
+    font-family: 'Ubuntu Mono';
+    margin: 0;
+    padding: 0;
+}
+
+#btn-signin, #btn-signup {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    margin: 5px 6px;
+    cursor: pointer;
+}
+
+#btn-allposts, #btn-createpost {
+    background-color: orange;
+    border: none;
+    color: black;
+    padding: 15px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    margin: 5px 6px;
+    cursor: pointer;
+}
