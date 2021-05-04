@@ -7,6 +7,9 @@
     <meta name="viewort" content="width=device-width, initial-scale=1"/>
     <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/index.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <title>Sribbler</title>
 </head>
 
@@ -14,19 +17,93 @@
     <header>
         <div class="top-container">
             <div>
-                <h1 class="heading">Scribbler</h3>
-                <h5 class="sub-heading">Explore, Imagine, Create</h4>
+                <h2 class="heading">Scribbler</h3>
+                <h6 class="sub-heading">Explore, Imagine, Create</h4>
             </div>
             <div>
-                <button id="btn-signup">Sign Up</button>
-                <button id="btn-signin">Sign In</button>
+                <button class="btn btn-primary rounded-0" data-toggle="modal" data-target="#modalSignUp">Sign Up</button>
+                <button class="btn btn-primary rounded-0" data-toggle="modal" data-target="#modalSignin">Sign In</button>
             </div>
         </div>
     </header>
     <div class="main-container">
-        <button id="btn-allposts">All Posts</button>
-        <button id="btn-createpost">Create Post</button>
+        <div>
+            <button class="btn btn-warning rounded-0 mr-1" id="btn-allposts">All Posts</button>
+            <button class="btn btn-warning rounded-0" id="btn-createpost">Create Post</button>
+        </div>
     </div>
+
+    <!-- sign in Modal -->
+<div class="modal fade" id="modalSignin" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content rounded-0">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel">Welcome Back</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+              <div class="form-group">
+                  <label for="inputUsername">Username</label>
+                  <input type="text" class="form-control" id="inputUsername" placeholder="Enter your username" required>
+              </div>
+              <div class="form-group">
+                  <label for="inputPassword">Password</label>
+                  <input type="password" class="form-control" id="inputPassword" placeholder="Enter your password" required>
+              </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success btn-block rounded-0">Sign In</button>
+                    <p class="gosignup">
+                        Not a member?
+                        <a data-target="#modalSignUp" data-toggle="modal" href="#modalSignUp" 
+                             onclick="$('#modalSignin').modal('hide')">Sign Up</a>
+                    </p>
+                </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- signup modal-->
+  <div class="modal fade" id="modalSignUp" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content rounded-0">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel">Get Started</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+                <div class="form-group">
+                    <label for="inputName">Name</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="Enter your Name" required>
+                </div>
+                <div class="form-group">
+                  <label for="inputUsername">Username</label>
+                  <input type="text" class="form-control" id="inputUsername" placeholder="Enter your username" required>
+              </div>
+                <div class="form-group">
+                    <label for="inputPassword">Password</label>
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Enter your Password" required>
+                </div>
+                <div class="form-group">
+                  <label for="inputConfirmPassword">Confirm Password</label>
+                  <input type="password" class="form-control" id="inputConfirmPassword" placeholder="Re-enter your Password" required>
+              </div>
+              <div class="form-group">
+                    <button type="submit" class="btn btn-success btn-block rounded-0">Sign Up</button>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="scripts/index.js"></script>
 </body>
 

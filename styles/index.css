@@ -12,6 +12,7 @@ body {
 }
 
 .top-container {
+    margin : 1%;
     display : flex;
     flex-direction: row;
     justify-content: space-between;
@@ -22,6 +23,7 @@ body {
     display : flex;
     align-items: center;
     justify-content: center;
+    margin: 1%;
 }
 
 .heading {
@@ -37,26 +39,19 @@ body {
     padding: 0;
 }
 
-#btn-signin, #btn-signup {
-    background-color: blue;
-    border: none;
-    color: white;
-    padding: 15px 20px;
-    text-align: center;
-    display: inline-block;
-    font-size: 15px;
-    margin: 5px 6px;
-    cursor: pointer;
+.modal-dialog .form-control {
+    border: 0;
+    background-color: #e9ecef;
 }
 
-#btn-allposts, #btn-createpost {
-    background-color: orange;
-    border: none;
-    color: black;
-    padding: 15px 20px;
-    text-align: center;
-    display: inline-block;
-    font-size: 15px;
-    margin: 5px 6px;
-    cursor: pointer;
+.modal-dialog .btn {
+    margin-top : 30px;
+    margin-bottom : 15px;
 }
+
+.modal-dialog .gosignup {
+    text-align: center;
+}
+
+
+
