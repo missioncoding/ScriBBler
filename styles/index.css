@@ -11,33 +11,15 @@ body {
     background-size: cover;
 }
 
-.top-container {
-    margin : 1%;
-    display : flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 
 .main-container {
-    min-height: 100vh;
+    min-height: 80vh;
     display : flex;
     align-items: center;
     justify-content: center;
-    margin: 1%;
+    margin: auto;
 }
 
-.heading {
-    font-family: 'Montez', cursive; 
-    margin: 0;
-    padding: 0;
-    color: blue;
-}
-
-.sub-heading {
-    font-family: 'Ubuntu Mono';
-    margin: 0;
-    padding: 0;
-}
 
 .modal-dialog .form-control {
     border: 0;
