@@ -2,19 +2,26 @@ body {
     background-color: #ffeedd !important; 
 }
 
-.card-body {
+.postblock {
+    display : flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.postblock > div {
+    flex: 40%;
+    margin-left :30px;
+    margin-right :30px;
+    margin-top : 20px;
+    margin-bottom : 20px;
+}
+
+.postcard {
 
     display: flex;
     flex-direction: row;
+    border:1px solid black;
 }
-
-#example1 {
-    border:0px;
-    padding: 0px;
-    border-radius: 25px;
-    
-  }
-  
 
 .postowner {
     background-color: white;
@@ -31,14 +38,3 @@ p {
 i {
     float: right;
 }
-
-.postcontent {
-    margin:1%;
-    background-color: #e9ecef;
-}
-
-.postdetail {
-    line-height: 18px;
-    max-height: 54px; /* line-height * 3 */
-    overflow: hidden;
-  }
