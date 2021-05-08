@@ -43,7 +43,22 @@
         <div class="likePostButton">    
             <button  id= "likePost" onclick="postLiked()"><i class="fa fa-thumbs-up"></i> Like</button> 
         </div>
-        <span id="commentCount">Be the first one to like this!</span>
+        <p id="commentCount">Be the first one to like this!</p>
+
+        <div class="form-outline w-75 mb-4">
+            <textarea class="form-control" id="post-comment" rows="3"></textarea>
+        </div>
+
+        <div class="submitComment mb-4">    
+            <button id="addComment" onclick="addComments(post-comment)">Comment</button>
+        </div>
+
+        <p class="mb-2">All Comments</p>
+        <div class="commentslist form-outline w-75 mb-4">
+            <p class="form-control" class="posted-comment">my comment</p>
+        </div>
+
+
     </div>
     <script src="../scripts/post.js"></script>
 </body>
