@@ -6,9 +6,8 @@ function addComments() {
     var postComment = ele.value;
     if (postComment.trim() !== '') {
            document.getElementById('comments').innerHTML += `<p class="post-comments">${postComment}</p>`;
-           document.getElementById('comment-box').value = '';
     }
-    ele.value = ele.defaultValue;
+    ele.value = ele.placeholder;
 }
 
 /**
@@ -24,25 +23,6 @@ function postLiked() {
         document.getElementById('commentCount').innerHTML= likes + " people have liked this!"; 
     }
 }
-
-
-var likeCount = 0;
-/* Track Total No. Of LIked Post */
-function likePost() {
-    likeCount++;
-    if (likeCount === 1) {
-        /* Set Like Text And Liked Button When Total Like Equal To 1 */
-        document.getElementById('like-container').innerHTML =
-            `<button type="button" id="likeBtn" class="like-btn" onclick="likePost()"><i class="fa fa-thumbs-up"></i> Liked</button>` +
-            `<p id="like-text">${likeCount} person likes this!</p>`;
-    } else if (likeCount > 1) {
-        /* Set Like Text And Liked Button When Total Like Greater Than To 1 */
-        document.getElementById('like-container').innerHTML =
-            `<button type="button" id="likeBtn" class="like-btn" onclick="likePost()"><i class="fa fa-thumbs-up"></i>  Liked</button>` +
-            `<p id="like-text">${likeCount} people like this!</p>`;
-    }
-}
-
 
 
 function createEditBtn() {
@@ -66,7 +46,7 @@ window.onload = function () {
     document.getElementById('post-owner').innerHTML = details["owner"];
     document.getElementById('action-btn').innerHTML = editBtn;
     document.getElementById('post-title').innerHTML = details["title"];
-    document.getElementById('post-body').innerHTML = details["info"];
+    document.getElementById('post-content').innerHTML = details["info"];
 }
 
 
@@ -76,11 +56,11 @@ window.onload = function () {
  * and save them using the save button
  */
 function editPost() {
-    var saveBtn = createSavebtn();
+    var saveBtn = createSaveBtn();
     document.getElementById('post-title').contentEditable = "true";
     document.getElementById('post-title').style.border = "1px solid #e60073";
-    document.getElementById('post-body').contentEditable = "true";
-    document.getElementById('post-body').style.border = "1px solid #e60073";
+    document.getElementById('post-content').contentEditable = "true";
+    document.getElementById('post-content').style.border = "1px solid #e60073";
     document.getElementById('action-btn').innerHTML = saveBtn;
 }
 
@@ -95,8 +75,8 @@ function savePost() {
     document.getElementById('action-btn').innerHTML = editBtn;
     document.getElementById('post-title').contentEditable = "false";
     document.getElementById('post-title').style.border = "none";
-    document.getElementById('post-body').contentEditable = "false";
-    document.getElementById('post-body').style.border = "none";
+    document.getElementById('post-content').contentEditable = "false";
+    document.getElementById('post-content').style.border = "none";
     document.getElementById('post-title').innerHTML = "UPDATED: " + document.getElementById('post-title').innerHTML;
-    document.getElementById('post-body').innerHTML = "UPDATED: " + document.getElementById('post-body').innerHTML;    
+    document.getElementById('post-content').innerHTML = "UPDATED: " + document.getElementById('post-content').innerHTML;    
 }

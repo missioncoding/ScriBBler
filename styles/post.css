@@ -13,6 +13,15 @@
 	height: 100%;
 }
 
+.post-comments {
+	margin: 10px;
+	height: 40px;
+	padding-top: 8px;
+	padding-left: 10px;
+	text-align: left;
+	background-color: white;
+}
+
 .post-btn {
     background-color: #e60073 !important;
 	box-shadow: 0px 5px 12px -4px #e60073;
