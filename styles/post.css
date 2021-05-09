@@ -1,0 +1,24 @@
+.post-body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#comments {
+	display: flex;
+	flex-direction: column-reverse;
+	background-color: lightgrey;
+	width: 70%;
+	height: 100%;
+}
+
+.post-btn {
+    background-color: #e60073 !important;
+	box-shadow: 0px 5px 12px -4px #e60073;
+    color: white !important;
+}
+
+.post-container {
+    max-width: 1400px !important;
+}

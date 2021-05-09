@@ -2,43 +2,49 @@ body {
     background-color: #ffeedd !important; 
 }
 
-.card-body {
-
-    display: flex;
-    flex-direction: row;
-}
-
-#example1 {
-    border:0px;
-    padding: 0px;
-    border-radius: 25px;
-    
-  }
-  
-
 .postowner {
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
-p {
-    display: inline-block;
-    
+.card-wrapper {
+    border-radius: 25px !important;
+}
+
+.card-title {
+    color: grey;
+}
+
+.card {
+    overflow: hidden !important;
+    border : 0 !important;
+}
+
+.card-body {
+    background-color: #e9ecef;
+    padding : 10px;
 }
 
 i {
     float: right;
 }
 
-.postcontent {
-    margin:1%;
-    background-color: #e9ecef;
-}
-
 .postdetail {
     line-height: 18px;
     max-height: 54px; /* line-height * 3 */
     overflow: hidden;
-  }
+}
+
+.modal-dialog .confirm-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-dialog {
+    max-width: 345px !important;
+}
+

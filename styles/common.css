@@ -17,3 +17,10 @@
     margin: 0;
     padding: 0;
 }
+
+.hr-line {
+	margin-top: 0px;
+	margin-bottom: 4px;
+	color: black;
+	border-top: 1px solid black;
+}
