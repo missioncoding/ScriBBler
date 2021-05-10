@@ -18,9 +18,9 @@ function postLiked() {
     document.getElementById('likePost-btn').innerHTML='<i class="fa fa-thumbs-up"></i>' +" Liked!";
     likes++;
     if (likes == 1) {
-        document.getElementById('commentCount').innerHTML="1 person like this!";
+        document.getElementById('commentCount').innerHTML="1 person likes this!";
     } else {
-        document.getElementById('commentCount').innerHTML= likes + " people have liked this!"; 
+        document.getElementById('commentCount').innerHTML= likes + " people like this!"; 
     }
 }
 
@@ -39,7 +39,7 @@ function createSaveBtn() {
  * Since the post details can occupy more space we use session storage
  * instead of cookies.
  */
-window.onload = function () {
+ window.addEventListener("load",function() {
     var postdetailsObj = sessionStorage.getItem('postdetails');
     var details = JSON.parse(postdetailsObj);
     var editBtn = createEditBtn();
@@ -47,7 +47,8 @@ window.onload = function () {
     document.getElementById('action-btn').innerHTML = editBtn;
     document.getElementById('post-title').innerHTML = details["title"];
     document.getElementById('post-content').innerHTML = details["info"];
-}
+},false);     
+
 
 
 /**
@@ -62,6 +63,7 @@ function editPost() {
     document.getElementById('post-content').contentEditable = "true";
     document.getElementById('post-content').style.border = "1px solid #e60073";
     document.getElementById('action-btn').innerHTML = saveBtn;
+
 }
 
 

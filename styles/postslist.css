@@ -2,6 +2,9 @@ body {
     background-color: #ffeedd !important; 
 }
 
+.c-pointer {
+    cursor: pointer;
+}
 
 .postowner {
     background-color: white;
@@ -55,13 +58,13 @@ i {
     font-size: 14px;
 }
 
-.modal-dialog .confirm-btn {
+.confirm-modal .confirm-btn {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.modal-dialog {
+.confirm-modal {
     max-width: 345px !important;
 }
 
