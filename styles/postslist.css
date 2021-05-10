@@ -2,6 +2,9 @@ body {
     background-color: #ffeedd !important; 
 }
 
+.c-pointer {
+    cursor: pointer;
+}
 
 .postowner {
     background-color: white;

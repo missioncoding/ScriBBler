@@ -1,7 +1,7 @@
 const signin_template = document.createElement('template');
 signin_template.innerHTML = '<div class="modal-content rounded-0">' +
                                 '<div class="modal-header pb-0 no-border">' +
-                                     '<h3 class="modal-title" id="modalLabel">Welcome Back</h3>' + 
+                                     '<h3 class="modal-title" id="modalLabel">Welcome Back!</h3>' + 
                                      '<button type="button" class="close" data-dismiss="modal" aria-label="Close">' +
                                          '<span aria-hidden="true">&times;</span>' +
                                      '</button>' +

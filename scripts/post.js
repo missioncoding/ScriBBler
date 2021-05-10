@@ -18,9 +18,9 @@ function postLiked() {
     document.getElementById('likePost-btn').innerHTML='<i class="fa fa-thumbs-up"></i>' +" Liked!";
     likes++;
     if (likes == 1) {
-        document.getElementById('commentCount').innerHTML="1 person like this!";
+        document.getElementById('commentCount').innerHTML="1 person likes this!";
     } else {
-        document.getElementById('commentCount').innerHTML= likes + " people have liked this!"; 
+        document.getElementById('commentCount').innerHTML= likes + " people like this!"; 
     }
 }
 
