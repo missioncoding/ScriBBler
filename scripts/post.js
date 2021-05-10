@@ -7,7 +7,7 @@ function addComments() {
     if (postComment.trim() !== '') {
            document.getElementById('comments').innerHTML += `<p class="post-comments">${postComment}</p>`;
     }
-    ele.value = ele.placeholder;
+    ele.value = '';
 }
 
 /**
