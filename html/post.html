@@ -30,35 +30,32 @@
     <div class="post-container container py-3 mt-3">
         <header>
             <div class="postheader">
-                <h3 class="text-center" id="post-title">Centered Text</h3>
+                <h3 class="text-center" id="post-title"></h3>
             </div>
             <div class="d-flex flex-row justify-content-between">
-                <div class="p-2 bd-highlight">Flex tem 1</div>
-                <div class="p-2 bd-highlight">Flex item 2</div>
+                <div class="p-2 bd-highlight" id="post-owner"></div>
+                <div class="p-2 bd-highlight" id="action-btn"></div>
               </div>
         </header>
-        <div class="postbody">
-            <p class="text-justify">In a professional context it often happens that private or corporate clients corder a publication to be made and presented with the actual content still not being ready. Think of a news blog that's filled with content hourly on the day of going live. However, reviewers tend to be distracted by comprehensible content, say, a random text copied from a newspaper or the internet. The are likely to focus on the text, disregarding the layout and its elements. Besides, random text risks to be unintendedly humorous or offensive, an unacceptable risk in corporate environments. Lorem ipsum and its many variants have been employed since the early 1960ies, and quite likely since the sixteenth century.</p>
+        <div class="post-body">
+            <p class="text-justify" id="post-content"></div>
+        <div class="mb-2">    
+            <button  type="button" class="btn post-btn rounded-0" id= "likePost-btn" onclick="postLiked()"><i class="fa fa-thumbs-up"></i> Like</button> 
         </div>
-        <div class="likePostButton">    
-            <button  id= "likePost" onclick="postLiked()"><i class="fa fa-thumbs-up"></i> Like</button> 
-        </div>
-        <p id="commentCount">Be the first one to like this!</p>
+        <p class="small" id="commentCount">Be the first one to like this!</p>
 
         <div class="form-outline w-75 mb-4">
-            <textarea class="form-control" id="post-comment" rows="3"></textarea>
+            <textarea class="form-control" id="post-comment" rows="3" placeholder="Leave a comment..."></textarea>
         </div>
 
         <div class="submitComment mb-4">    
-            <button id="addComment" onclick="addComments(post-comment)">Comment</button>
+            <button type="button" class="btn post-btn rounded-0" id="addcomment-btn" onclick="addComments()">Comment</button>
         </div>
 
-        <p class="mb-2">All Comments</p>
-        <div class="commentslist form-outline w-75 mb-4">
-            <p class="form-control" class="posted-comment">my comment</p>
+        <div id="comment-container">
+            <p class="mb-2 font-weight-bold">All Comments</p>
+            <div id="comments"></div>
         </div>
-
-
     </div>
     <script src="../scripts/post.js"></script>
 </body>

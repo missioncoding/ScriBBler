@@ -17,3 +17,14 @@
     margin: 0;
     padding: 0;
 }
+
+.separator {
+	margin-top: 0px;
+	margin-bottom: 4px;
+	color: grey;
+	border-top: 1px solid grey;
+}
+
+.no-border {
+    border-bottom: 0px !important;
+}

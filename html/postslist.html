@@ -1,179 +1,185 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
-    <meta name="viewort" content="width=device-width, initial-scale=1"/>
-    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen" href="../styles/postslist.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="../styles/common.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-    <title>Sribbler</title>
-</head>
-
-<body>
-    <header>
-        <div class="top-container">
-            <div>
-                <h2 class="heading">Scribbler</h3>
-                <h6 class="sub-heading">Explore, Imagine, Create</h4>
-            </div>
-            <div>
-                <button class="btn btn-primary rounded-0" data-toggle="modal" data-target="#modalSignUp">Sign Up</button>
-                <button class="btn btn-primary rounded-0" data-toggle="modal" data-target="#modalSignin">Sign In</button>
-            </div>
-        </div>
-    </header>
-
-    <!-- ATTENTION: The HTML code for the list of posts has been given to you. You can feel free to add/delete/modify this code. You need to write the proper CSS and JavaScript code corresponding to this page so that the result looks like the screenshots given to you in the Project Statement. -->
-    
-    <div class="container">
-		<div class="row">
-            <div class="col-lg-6 mb-4">
-                <div class="card card-wrapper"> 
-                    <div class="row no-gutters">
-                        <div class="col-sm-2 postowner">
-                            <p>Srishti Gupta</p> 
-                        </div>
-                        <div class="col-sm-10">
-                            <div class="card-body">
-                                <div class="d-flex p-2 justify-content-between">
-                                <p class="card-title">‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
-                                    <span>
-                                        <i class="fa fa-trash" data-toggle="modal" data-target="#confirmModal"></i>
-                                    </span>
-                                </div>
-                                <p class="card-text postdetail">Since JavaScript does not have any type-checking, 
-                                    either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. 
-                                    Though all the three keywords are used for the same purpose, they are different.</p>
-                                <span>
-                                    <i class="fa fa-ellipsis-h"></i>
-                                </span>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+        <meta name="viewort" content="width=device-width, initial-scale=1"/>
+        <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+            <link rel="stylesheet" type="text/css" media="screen" href="../styles/postslist.css" />
+            <link rel="stylesheet" type="text/css" media="screen" href="../styles/common.css" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+                    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+                    <title>Sribbler</title>
+                </head>
+                <body>
+                    <header>
+                        <div class="top-container">
+                            <div>
+                                <h2 class="heading">Scribbler
+                                </h3>
+                                <h6 class="sub-heading">Explore, Imagine, Create
+                                </h4>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary rounded-0" data-toggle="modal" data-target="#modalSignUp">Sign Up</button>
+                                <button class="btn btn-primary rounded-0" data-toggle="modal" data-target="#modalSignin">Sign In</button>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 mb-4">
-                <div class="card h-100 card-wrapper"> 
-                    <div class="row no-gutters">
-                        <div class="col-sm-2 postowner">
-                            <p>Colby Fayock</p> 
-                        </div>
-                        <div class="col-sm-10">
-                            <div class="card-body">
-                                <div class="d-flex p-2 justify-content-between">
-                                <p class="card-title">What is linting and how can it save you time?</p>
-                                    <span>
-                                        <i class="fa fa-trash" data-toggle="modal" data-target="#confirmModal"></i>
-                                    </span>
+                    </header>
+                    <!-- ATTENTION: The HTML code for the list of posts has been given to you. You can feel free to add/delete/modify this code. You need to write the proper CSS and JavaScript code corresponding to this page so that the result looks like the screenshots given to you in the Project Statement. -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 pb-3 mx-auto" id="post-1">
+                                <div class="card h-100 card-wrapper">
+                                    <div class="col-sm-2 postowner left-col">
+                                        <p id="postowner-1">Srishti Gupta</p>
+                                    </div>
+                                    <div class="col-sm-10 right-col">
+                                        <div class="card-body">
+                                            <div class="d-flex p-2 justify-content-between">
+                                                <p id="posttitle-1" class="card-title">‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
+                                                <span>
+                                                    <i class="fa fa-trash" data-toggle="modal" data-target="#confirmModal" id="1"
+                                                    onclick="markForDelete(this.id)"></i>
+                                                </span>
+                                            </div>
+                                            <p id = "postbody-1" class="card-text postdetail">Since JavaScript does not have any type-checking, 
+                                                either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. 
+                                                Though all the three keywords are used for the same purpose, they are different.</p>
+                                            <span>
+                                                <i class="fa fa-ellipsis-h" id="1" onclick="viewPost(this.id)"></i>
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <p class="card-text postdetail">One of the biggest challenges in software development is time. 
+                            </div>
+                            <div class="col-lg-6 pb-3 mx-auto" id="post-2">
+                                <div class="card h-100 card-wrapper">
+                                    <div class="col-sm-2 postowner left-col">
+                                        <p id="postowner-2">Colby Fayock</p>
+                                    </div>
+                                    <div class="col-sm-10 right-col">
+                                        <div class="card-body">
+                                            <div class="d-flex p-2 justify-content-between">
+                                                <p id="posttitle-2" class="card-title">What is linting and how can it save you time?</p>
+                                                <span>
+                                                    <i id="2" class="fa fa-trash" data-toggle="modal" data-target="#confirmModal"
+                                        onclick="markForDelete(this.id)"></i>
+                                                </span>
+                                            </div>
+                                            <p id = "postbody-2" class="card-text postdetail">One of the biggest challenges in software development is time. 
                                     It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.</p>
-                                <span>
-                                    <i class="fa fa-ellipsis-h"></i>
-                                </span>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 mb-4">
-                <div class="card h-100 card-wrapper"> 
-                    <div class="row no-gutters">
-                        <div class="col-sm-2 postowner">
-                            <p>Yazeed Bzadough</p> 
-                        </div>
-                        <div class="col-sm-10">
-                            <div class="card-body">
-                                <div class="d-flex p-2 justify-content-between">
-                                <p class="card-title">How to Get More Views on Your Tech Blog</p>
-                                    <span>
-                                        <i class="fa fa-trash" data-toggle="modal" data-target="#confirmModal"></i>
-                                    </span>
+                                            <span>
+                                                <i class="fa fa-ellipsis-h" id="2" onclick="viewPost(this.id)"></i>
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <p class="card-text postdetail">If you're a developer with a Twitter account, 
-                                    you've already seen everyone and their cat start a blog, YouTube channel, or Patreon. 
-                                    We all want to become stars, or at the very least, a recognizable name in the industry.</p>
-                                <span>
-                                    <i class="fa fa-ellipsis-h"></i>
-                                </span>
-                                
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 mb-4">
-                <div class="card h-100 card-wrapper"> 
-                    <div class="row no-gutters">
-                        <div class="col-sm-2 postowner">
-                             <p>Cedd Burge </p> 
-                        </div> 
-                        <div class="col-sm-10">
-                            <div class="card-body">
-                                <div class="d-flex p-2 justify-content-between">
-                                <p class="card-title">How to write easily describable code</p>
-                                    <span>
-                                        <i class="fa fa-trash" data-toggle="modal" data-target="#confirmModal"></i>
-                                    </span>
+                            <div class="col-lg-6 pb-3 mx-auto" id="post-3">
+                                <div class="card h-100 card-wrapper">
+                                    <div class="col-sm-2 postowner left-col">
+                                        <p id="postowner-3">Yazeed Bzadough</p>
+                                    </div>
+                                    <div class="col-sm-10 right-col">
+                                        <div class="card-body">
+                                            <div class="d-flex p-2 justify-content-between">
+                                                <p id="posttitle-3" class="card-title">How to Get More Views on Your Tech Blog</p>
+                                                <span>
+                                                    <i id="3" class="fa fa-trash" data-toggle="modal" data-target="#confirmModal"
+                                    onclick="markForDelete(this.id)"></i>
+                                                </span>
+                                            </div>
+                                            <p id = "postbody-3" class="card-text postdetail">If you're a developer with a Twitter account, 
+                                you've already seen everyone and their cat start a blog, YouTube channel, or Patreon. 
+                                We all want to become stars, or at the very least, a recognizable name in the industry.</p>
+                                            <span>
+                                                <i class="fa fa-ellipsis-h" id="3" onclick="viewPost(this.id)"></i>
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <p class="card-text postdetail">When code is not describable using words, most people have to do some mental mapping to turn it in to words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different people will map to different words, which
-                                leads to confusion when discussing the code.</p>
-                                <span>
-                                    <i class="fa fa-ellipsis-h"></i>
-                                </span>
-                                
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 mx-auto">
-                <div class="card h-100 card-wrapper"> 
-                    <div class="row no-gutters">
-                        <div class="col-sm-2 postowner">
-                             <p>Srishti Gupta</p> 
-                        </div>
-                        <div class="col-sm-10">
-                            <div class="card-body">
-                                <div class="d-flex p-2 justify-content-between">
-                                <p class="card-title">Everything you should know about ‘module’ & ‘require’ in Node.js</p>
-                                <span>
-                                    <i class="fa fa-trash" data-toggle="modal" data-target="#confirmModal"></i>
-                                    </span>
+                            <div class="col-lg-6 pb-3 mx-auto" id="post-4">
+                                <div class="card h-100 card-wrapper">
+                                    <div class="col-sm-2 postowner left-col">
+                                        <p id="postowner-4">Cedd Burge </p>
+                                    </div>
+                                    <div class="col-sm-10 right-col">
+                                        <div class="card-body">
+                                            <div class="d-flex p-2 justify-content-between">
+                                                <p id="posttitle-4" class="card-title">How to write easily describable code</p>
+                                                <span>
+                                                    <i id="4" class="fa fa-trash" data-toggle="modal" data-target="#confirmModal"
+                                                    onclick="markForDelete(this.id)"></i>
+                                                </span>
+                                            </div>
+                                            <p id = "postbody-4" class="card-text postdetail">When code is not describable using words, most people have to do some mental mapping to turn it in to words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different people will map to different words, which
+                                            leads to confusion when discussing the code.</p>
+                                            <span>
+                                                <i class="fa fa-ellipsis-h" id="4" onclick="viewPost(this.id)"></i>
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <p class="card-text postdetail">Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module named xyz.</p>
-                                <span>
-                                    <i class="fa fa-ellipsis-h"></i>
-                                </span>
+                            </div>
+                            <div class="col-lg-6 mx-auto pb-3" id="post-5">
+                                <div class="card h-100 card-wrapper">
+                                    <div class="col-sm-2 postowner left-col">
+                                        <p id="postowner-5">Srishti Gupta</p>
+                                    </div>
+                                    <div class="col-sm-10 right-col">
+                                        <div class="card-body">
+                                            <div class="d-flex p-2 justify-content-between">
+                                                <p id="posttitle-5" class="card-title">Everything you should know about ‘module’ & ‘require’ in Node.js</p>
+                                                <span>
+                                                    <i id="5" class="fa fa-trash" data-toggle="modal" data-target="#confirmModal"
+                                                onclick="markForDelete(this.id)"></i>
+                                                </span>
+                                            </div>
+                                            <p id = "postbody-5" class="card-text postdetail">Node.js treats each JavaScript file as a separate module. 
+                                                For instance, if you have a file containing some code and this file is named xyz.js, 
+                                                then this file is treated as a module in Node, and you can say that you’ve created a module named xyz.
+                                                In one sentence: Node.js shines in real-time web applications employing push technology over websockets. 
+                                                What is so revolutionary about that? Well, after over 20 years of stateless-web based on the stateless 
+                                                request-response paradigm, we finally have web applications with real-time, two-way connections, 
+                                                where both the client and server can initiate communication, allowing them to exchange data freely. 
+                                                This is in stark contrast to the typical web response paradigm, where the client always initiates communication.
+                                                Additionally, it’s all based on the open web stack (HTML, CSS and JS) running over the standard port 80.
+                                                One might argue that we’ve had this for years in the form of Flash and Java Applets—but in reality, 
+                                                those were just sandboxed environments using the web as a transport protocol to be delivered to the client. 
+                                                Plus, they were run in isolation and often operated over non-standard ports, 
+                                                which may have required extra permissions and such.
+                                            </p>
+                                            <span>
+                                                <i class="fa fa-ellipsis-h" id="5" onclick="viewPost(this.id)"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-		</div>
-	</div>
-
-    <!-- confirmation box modal-->
-    <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content rounded-0">
-            <div class="modal-body">
-              <p>Are you sure you want to delete this post?</p>
-            <div class='confirm-btn'>
-                <div><button type="button" class="btn btn-success rounded-0">Yes</button></div>
-               <div><button type="button" class="btn btn-danger rounded-0" data-dismiss="modal">No</button></div>
-            </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <script src="../scripts/postslist.js"></script>
-</body>
-
-</html>
+                    <!-- confirmation box modal-->
+                    <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content rounded-0">
+                                <div class="modal-body">
+                                    <p>Are you sure you want to delete this post?</p>
+                                    <div class='confirm-btn'>
+                                        <div>
+                                            <button type="button" class="btn btn-success rounded-0" data-dismiss="modal" onclick="deletePost(this.id)">Yes</button>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn btn-danger rounded-0" data-dismiss="modal">No</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="../scripts/postslist.js"></script>
+                </body>
+            </html>
